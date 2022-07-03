@@ -1,0 +1,20 @@
+$primary-color: rgb(255, 0, 0);
+$font-color: rgb(255, 255, 255);
+$font-size: 0.9rem;
+@mixin flexCenter($direction:row){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+$red: red;
+$blue: rgb(16, 51, 207);
+$yellow: rgb(240, 240, 18);
+$orangeRed: rgb(255, 68, 0);
+$darkRed:rgba(176, 34, 38, 1);
+$lightBlue: #10558a;
+$darkYellow: #cac014;
+$lightOrange: #d25934;
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+$violet:rgb(154, 37, 200);

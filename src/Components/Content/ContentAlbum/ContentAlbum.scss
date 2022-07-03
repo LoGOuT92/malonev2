@@ -1,0 +1,66 @@
+@import '../../../base';
+.contentAlbumContainer{
+    width: clamp(40ch, 65vh, 100ch);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+    transition: 0.5s;
+    z-index: 2;
+    .AlbumImageContainer{
+        width: clamp(150px, 100%, 75ch);
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        position: relative;
+        .AlbumBuyOptions{
+            position: absolute;
+            transition:0.5s;
+            opacity: 0;
+            width: 100%;
+            display: flex;
+            align-items: space-between;
+            justify-content: space-evenly;
+            background-color: $black;
+            font-weight: 900;
+            z-index: 5;
+        }
+        .AlbumBuy{
+            gap: 5px;
+            @include flexCenter;
+        }
+        .AlbumPicture{
+            z-index: 2;
+        }
+        .DiscPicture{
+            position:absolute;
+            z-index: 1;
+            transition:1s;
+        }
+        img{
+            display: inline-block;
+            vertical-align: middle;
+            max-inline-size: 100%;
+            block-size: auto;
+        }
+    }
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        .AlbumBuyOptions{
+            opacity: 0.7;
+        }
+        .DiscPicture{
+            transform: translateX(12ch)rotate(90deg);
+        }
+    }
+}
+@media only screen and (max-width: 1150px) {
+    .contentAlbumContainer:hover{
+        transform: scale(1);
+        .DiscPicture{
+            transform: translateX(0)rotate(0);
+        }
+    }
+  }

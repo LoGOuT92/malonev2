@@ -1,0 +1,33 @@
+@import '../../../../theme';
+.ShopItemsContainer{
+    display: flex;
+    width: 50%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    ul{
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+    }
+    li {
+        padding: 5px;
+        width: 100%;
+        transition: 0.5s;
+        
+        cursor: pointer;
+        @include colorTheme();
+        &:hover{
+            transform: scale(1.05);
+            
+        }
+    }
+    
+}
+@media only screen and (max-width: 900px) {
+    .ShopItemsContainer {
+        width: 90%;
+        li:hover{
+            transform: scale(1);
+        }
+    }
+  }

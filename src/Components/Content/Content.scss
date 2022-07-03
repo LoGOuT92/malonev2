@@ -1,0 +1,39 @@
+@import './../../base';
+
+.contentContainer{
+    @include flexCenter(column);
+    gap: 5px;
+    color: $font-color;
+    font-weight: 900;
+    padding: 10px;
+
+    .mainContent{
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .asd{
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .AlbumTitle{
+        h1{
+            margin:0;
+            padding:0;
+        }
+        h4{
+            margin:0;
+            padding:0;
+        }
+        font-weight: 900;
+    }
+}
+.contentContainer h2{
+    padding: 5px;
+    border-radius: 10px;
+}

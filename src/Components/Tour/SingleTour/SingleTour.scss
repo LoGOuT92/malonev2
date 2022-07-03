@@ -1,0 +1,29 @@
+@import '../../../base';
+.SingleTourContainer{
+    display: flex;
+    font-weight: 900;
+    .SingleTourInfo{
+        width: 100%;
+        @include flexCenter;
+        flex-wrap: wrap;
+        li{
+            @include flexCenter;
+            width:30ch;
+            
+        }
+    }
+    .SingleTourTickets{
+        @include flexCenter;
+        border-radius: 10px;
+        transition: 0.5s;
+        gap:5px;
+        color: white;
+        cursor: pointer;
+        
+        &:hover{
+            svg{
+                color:$violet;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@import '../../base';
+@import '../../theme';
+.tourContainer{
+    @include flexCenter;
+    width:100%;
+    .tourContent{
+        width:90%;
+    }
+    .tourList{
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        @include flexCenter(column);
+        .tourList{
+            padding: 5px;
+            width: 100%;
+            transition: 0.5s;
+            &:hover{
+                border-radius: 10px;
+                transform: scale(1.05);
+                background-color: $black;
+                @include colorTheme();
+            }
+        }
+    }
+}

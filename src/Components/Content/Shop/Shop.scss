@@ -1,0 +1,11 @@
+@import '../../../base';
+.ShopContainer{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: $black;
+}
+

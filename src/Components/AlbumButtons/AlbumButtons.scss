@@ -1,0 +1,27 @@
+@import '../../base';
+@import '../../theme';
+
+.albumButtonsContainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-weight: 900;
+    cursor: pointer;
+    align-items:center;
+    z-index: 10;
+    .albumMenuButton{
+      border-bottom: 2px solid $black;
+      padding: 10px;
+    }
+    .albumSingleChangeButton{
+      display: flex;
+      flex-direction: column;
+      width:max-content;
+      gap: 5px;
+      position: absolute;
+      margin-top: 45px;padding:5px;
+      box-shadow:0px 0px 5px 4px $white;
+      border-radius: 10px;
+      
+    }
+}

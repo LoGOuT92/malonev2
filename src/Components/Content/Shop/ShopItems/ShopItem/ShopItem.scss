@@ -1,0 +1,22 @@
+@import '../../../../../theme';
+@import '../../../../../base';
+.shopItemContainer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    .ItemBuyOptionsContainer{
+        @include flexCenter();
+        gap: 5px;
+    }
+    .cartIcon{
+        @include flexCenter();
+        svg{
+            transition: 0.5s;
+            &:hover{
+                @include colorTheme();
+                transform: rotate(15deg) scale(1.5);
+            }
+        }
+    }
+}

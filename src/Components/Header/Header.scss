@@ -1,0 +1,26 @@
+@import '../../base';
+.headerContainer{
+    position: relative;
+    @include flexCenter;
+    gap: 5px;
+    .headerCircle{
+        border-radius: 50%;
+        border:3px solid $black;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        font-size: 0.9rem;
+        font-weight: bold;
+        @include flexCenter;
+        color: $font-color;
+        cursor: pointer;
+       
+    }
+    .loginButton{
+        position: absolute;
+        display: inline-block;
+        right: 0;
+        top:0;
+    }
+
+}
