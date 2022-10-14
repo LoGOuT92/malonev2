@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SingleTour from "./SingleTour/SingleTour";
 import "./Tour.scss";
 import tour from "../../assets/Tour";
@@ -16,17 +16,27 @@ interface Itour {
   }[];
 }
 const App: React.FC<IAppProps> = ({ shortName }) => {
-  const tourArray: Itour["tour"] = tour;
+  const [loading, setLoading] = useState<boolean>(true);
+  const [tourState, setTourState] = useState<Itour["tour"]>(
+    [] as Itour["tour"]
+  );
+  useEffect(() => {
+    setTourState(tour);
+    setLoading(false);
+  }, []);
+
   return (
     <div className="tourContainer">
       <div className="tourContent">
-        <ul className="tourList">
-          {tourArray.map((val) => (
-            <li key={val.index} className={`${shortName} tourList`}>
-              <SingleTour key={val.index} {...val} />
-            </li>
-          ))}
-        </ul>
+        {loading ? null : (
+          <ul className="tourList">
+            {tourState.map((val) => (
+              <li key={val.index} className={`${shortName} tourList`}>
+                <SingleTour key={val.index} {...val} />
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );

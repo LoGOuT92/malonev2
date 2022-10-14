@@ -27,6 +27,8 @@ const App: React.FunctionComponent<IAppProps> = (props) => {
         <ContentAlbum
           albumImage={Album.info.albumPicture}
           name={Album.info.name}
+          shortName={Album.info.shortName}
+          {...props}
         />
         <ContentTracks album={Album.tracks} shortName={Album.info.shortName} />
       </div>

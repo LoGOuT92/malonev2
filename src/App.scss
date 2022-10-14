@@ -6,16 +6,14 @@
   flex-direction: column;
   width:100%;
   position: relative;
-  flex-wrap: wrap;
   button{
     background-color:transparent;
     border: 0;
-    color: white;
     border-radius: 10px;
     cursor: pointer;
     padding: 10px;
     font-weight: 900;
-    color: rgb(255, 255, 255);
+    color: $white;
   }
 }
 

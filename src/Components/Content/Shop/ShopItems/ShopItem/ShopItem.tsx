@@ -7,6 +7,7 @@ import { actionCreators } from "../../../../../state";
 
 interface IAppProps {
   setpictureOptions: (val: IpictureOptions) => void;
+  setCartInfo: (val: boolean) => void;
   content: {
     index: number;
     name: string;
@@ -20,6 +21,7 @@ const App: React.FunctionComponent<IAppProps> = ({
   shortName,
   content,
   setpictureOptions,
+  setCartInfo,
 }) => {
   const dispatch = useDispatch();
   const { addItem } = bindActionCreators(actionCreators, dispatch);
@@ -30,10 +32,10 @@ const App: React.FunctionComponent<IAppProps> = ({
       prince: parseInt(content.prince),
     });
 
-    // setCartInfo(true);
-    // setTimeout(() => {
-    //   setCartInfo(false);
-    // }, 5000);
+    setCartInfo(true);
+    setTimeout(() => {
+      setCartInfo(false);
+    }, 5000);
   };
   return (
     <div

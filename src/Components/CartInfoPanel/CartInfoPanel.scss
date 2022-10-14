@@ -1,0 +1,56 @@
+@import '../../base';
+.info{
+    @include flexCenter(column);
+    color: $black;
+    border-radius: 10px;
+    background-color: rgb(221, 208, 208);
+    position: fixed;
+    margin: 0;
+    top: 10%;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    gap: 5px;
+    font-weight: 900;
+    .progress{
+      position: relative;
+      width: 100%;
+  }
+  .progress .color{
+      position: absolute;
+      width: 0px;
+      height: 2px;
+      border-radius: 15px;
+      animation: progres 5s infinite linear;    
+  }
+  @keyframes progres{
+      0%{
+        width: 0%;
+      }
+      100%{
+          width: 100%;
+      }
+  };
+    svg{
+      position: absolute;
+      right: -8px;
+      top: -8px;
+      color: white;
+      transition: 0.5s;
+      &:hover{
+        color: $red;
+        cursor: pointer;
+        transform: scale(1.2)
+      }
+    }
+  }
+
+@media only screen and (max-width: 745px) {
+    .info{
+        top: 10%;
+        left:25%;
+    }
+
+
+  }

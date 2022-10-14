@@ -3,6 +3,7 @@ import ShopItem from "./ShopItem/ShopItem";
 import "./ShopItems.scss";
 export interface IAppProps {
   setpictureOptions: (val: boolean | any) => void;
+  setCartInfo: (val: boolean) => void;
   merch: {
     index: number;
     name: string;

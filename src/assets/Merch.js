@@ -55,13 +55,13 @@ const merch = [
   {
     index: 8,
     name: "welve Carat Toothache CD",
-    prince: "11.99",
+    prince: "11.00",
     image: item8,
   },
   {
     index: 9,
     name: "Twelve Carat Toothache Digital Download",
-    prince: "6.99",
+    prince: "7.00",
     image: item9,
   },
   {
