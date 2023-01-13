@@ -4,8 +4,13 @@
 
 # PostMalone WebApp
 
-The web application presents my alternative design for the Artist's original website. I created it mainly to use the redux library.
-I know that the application doesn't  use the full potential of the redux library. However, it is supposed to present my current skills related to this library. (so far I have used a react reducer in my projects).
+Introducing the PostMalone WebApp, an alternative design for the artist's original website. The main goal of the application is to showcase my skills and understanding of the Redux library, even though it may not use the full potential of the library.
+
+The application offers dynamic change of albums which includes the ability to change the background of the page, change the album photo, and change the tracklist. This creates an interactive and engaging experience for the users. Additionally, the application includes an animation of a disc sliding out from under an album photo.
+
+Users can also change the picture of the items to buy after hovering the mouse over, and can add or remove items to the cart. The application is fully responsive, making it accessible from any device, allowing users to browse and make purchases on the go.
+
+The application is built using technologies such as HTML, SCSS for styling, React for building the user interface and TypeScript for type checking. The state management is handled by React Redux and redux-thunk. The application also uses Site for the animation of a disc sliding out from under an album photo.
 
 ## Demo : https://malonefanpage-de1e7.web.app/
 
